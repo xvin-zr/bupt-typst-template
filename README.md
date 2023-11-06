@@ -14,7 +14,7 @@
 
 ### macOS
 
-通过 HomeBrew 安装 typst：
+通过 Homebrew 安装 typst：
 ```
 brew install typst
 ```
