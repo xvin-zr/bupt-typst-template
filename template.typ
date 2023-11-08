@@ -284,7 +284,7 @@
 //   body
 // }
 
-#let primary_heading(
+#let PrimaryHeading(
   title
 ) = {
   grid(

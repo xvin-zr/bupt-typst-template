@@ -104,12 +104,12 @@ Typst 还支持书写行内的代码，就像 Markdown 一样，比如 `return n
 )
 
 #pagebreak()
-#primary_heading([= 致#h(2em)谢])
+#PrimaryHeading([= 致#h(2em)谢])
 
 谢谢你北邮，因为有你，温暖了四季。
 
 #pagebreak()
-#primary_heading([= 附#h(2em)录])
+#PrimaryHeading([= 附#h(2em)录])
 
 #set heading(outlined: false)
 
@@ -122,8 +122,8 @@ Typst 还支持书写行内的代码，就像 Markdown 一样，比如 `return n
 #set page(footer: none)
 
 #pagebreak()
-#primary_heading([= 外#h(1em)文#h(1em)资#h(1em)料])
+#PrimaryHeading([= 外#h(1em)文#h(1em)资#h(1em)料])
 
 #pagebreak()
-#primary_heading([= 外#h(1em)文#h(1em)译#h(1em)文])
+#PrimaryHeading([= 外#h(1em)文#h(1em)译#h(1em)文])
 
