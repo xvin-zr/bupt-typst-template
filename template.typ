@@ -29,7 +29,7 @@
 
 #let FONTSET = (
   English: "Times New Roman",
-  Hei:     "Source Han Sans SC",
+  Hei:     ("Inter", "Source Han Sans SC"),
   Song:    "Source Han Serif SC",
   Kai:     "STKaiti",
 )
