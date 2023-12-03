@@ -83,7 +83,12 @@ $ S = pi r^2 $
 
 == 引用示例
 
-这是一个参考文献的引用@webster_social_media 。但是具体的格式还不正确。@cn_ref
+#h(2em)
+这是一个参考文献的引用@source-han-sans 。但是具体的格式还不正确。
+
+如果上面一段的引用显示有问题，你可以这样引用#cite(<nextjs13>, style: "ieee")。
+
+也可以这样引用多个文献@useFormStatus @useFormState。
 
 == 代码示例
 
@@ -100,7 +105,7 @@ Typst 还支持书写行内的代码，就像 Markdown 一样，比如 `return n
 
 // 附页
 #show: Appendix.with(
-  bibliographyFile: "reference.yml"
+  bibliographyFile: "reference.bib"
 )
 
 #pagebreak()

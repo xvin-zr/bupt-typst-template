@@ -24,12 +24,15 @@
     pagebreak()
     PrimaryHeading([= 参考文献])
     
-    set text(font: (FONTSET.at("English"), FONTSET.at("Song")), size: FONTSIZE.WuHao)
+    set text(
+      font: (FONTSET.at("English"), FONTSET.at("Song")), size: FONTSIZE.WuHao, 
+      lang: "zh"
+    )
     set par(first-line-indent: 0em)
     bibliography(
       bibliographyFile, 
       title: none,
-      style: "gb-7114-2015-numeric"
+      style: "gb-t-7714-2015-numeric.csl",
     )
     show bibliography: it => {
 
