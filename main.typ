@@ -92,7 +92,7 @@ $ S = pi r^2 $
 
 == 代码示例
 
-这是一段用示例代码。
+这是一段示例代码。
 
 ```ts
 async function graduate(age: number) {
@@ -122,6 +122,8 @@ Typst 还支持书写行内的代码，就像 Markdown 一样，比如 `return n
 这是一个附录内容，学校规定附录的二级标题得是“附录”二字后接阿拉伯数字。
 
 但是 Typst 的中文与英文和数字之间的空格并没有像 LaTeX 那样自动空出，所以就需要自己手打了。
+
+
 
 #set page(footer: none)
 

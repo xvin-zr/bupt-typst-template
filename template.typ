@@ -146,8 +146,6 @@
     let sectionCounter    = 1
     let subsectionCounter = 1
 
-    // 摘要和目录的总页数，根据实际情况修改
-    let abstractOutlinePages = 3
 
     let headingList = query(selector(heading).after(loc), loc)
     for i in headingList {
@@ -163,22 +161,22 @@
         }
 
         if i.body == [致#h(2em)谢] {
-          [致#h(2em)谢 #box(width: 1fr, repeat[.]) #calc.abs(i.location().page() - abstractOutlinePages)\ ]
+          [致#h(2em)谢 #box(width: 1fr, repeat[.]) #counter(page).at(i.location()).at(0)\ ]
         } else if i.body == [附#h(2em)录] {
-          [附#h(2em)录 #box(width: 1fr, repeat[.]) #calc.abs(i.location().page() - abstractOutlinePages)\ ]
+          [附#h(2em)录 #box(width: 1fr, repeat[.]) #counter(page).at(i.location()).at(0)\ ]
         } else {
-          [#i.body #box(width: 1fr, repeat[.]) #calc.abs(i.location().page() - abstractOutlinePages)\ ]
+          [#i.body #box(width: 1fr, repeat[.]) #counter(page).at(i.location()).at(0)\ ]
         }
 
         chapterCounter = chapterCounter + 1
         sectionCounter = 1
       } else if i.level == 2 {
-        [#h(1em)#calc.abs(chapterCounter - 1)\.#sectionCounter#h(1em)#i.body #box(width: 1fr, repeat[.]) #calc.abs(i.location().page() - abstractOutlinePages)\ ]
+        [#h(1em)#calc.abs(chapterCounter - 1)\.#sectionCounter#h(1em)#i.body #box(width: 1fr, repeat[.]) #counter(page).at(i.location()).at(0)\ ]
 
         sectionCounter += 1
         subsectionCounter = 1
       } else if i.level == 3 {
-        [#h(2em)#calc.abs(chapterCounter - 1)\.#calc.abs(sectionCounter - 1)\.#subsectionCounter#h(1em)#i.body #box(width: 1fr, repeat[.]) #calc.abs(i.location().page() - abstractOutlinePages)\ ]
+        [#h(2em)#calc.abs(chapterCounter - 1)\.#calc.abs(sectionCounter - 1)\.#subsectionCounter#h(1em)#i.body #box(width: 1fr, repeat[.]) #counter(page).at(i.location()).at(0)\ ]
 
         subsectionCounter += 1
       }
