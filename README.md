@@ -49,6 +49,7 @@ typst compile main.typ
 
 ## 其他
 
+- 如果你的摘要和目录总页数超过 3 页，你需要修改 `template.typ` 中的 `abstractOutlinePages` 为正确的页数。
 - typst 在 0.9.0 (2023/10/31) 版本新增了中西文之间自动添加空格的功能，但似乎有 bug。
 - 参考文献的标准应该是 `GB/T 7714-2015`，但 typst 官方给的 bibliography 文档中 style 字符串的值是 `"gb-7114-2015-numeric"`。
 - 参考文献的格式仍有错误，无论是指定 style 为 `"gb-7114-2015-numeric"` 或是使用自定义的 `.csl` 文件。
