@@ -8,18 +8,33 @@
 
 ## 在线编辑
 
-你可以通过 [Typst 官网](https://typst.app) 在线编辑，具体使用见 [bupt-typst](https://github.com/QQKdeGit/bupt-typst)。
+你可以通过 [Typst 官网](https://typst.app) 在线编辑。
+
+由于 Typst 默认支持 Google Fonts，在线编辑时，你需要将 `template.typ` 中的 `FONTSET` 改成以下内容，
+
+```
+#let FONTSET = (
+  English: "Times New Roman",
+  Hei:     ("Inter", "Noto Sans CJK SC"),
+  Song:    "Noto Serif CJK SC",
+  Kai:     "FZKai-Z03",
+)
+```
+
+并导入 Times New Roman 和楷体的字体文件，具体方法见 [bupt-typst](https://github.com/QQKdeGit/bupt-typst)。
 
 ## 本地编译
 
 ### macOS
 
 通过 Homebrew 安装 typst：
+
 ```
 brew install typst
 ```
 
 之后在你的工作目录编译 `main.typ`：
+
 ```
 typst compile main.typ
 ```
@@ -39,9 +54,9 @@ typst compile main.typ
 - 参考文献的格式仍有错误，无论是指定 style 为 `"gb-7114-2015-numeric"` 或是使用自定义的 `.csl` 文件。
 - 有的段落没有缩进，你可以在它的上一行添加一个 `#h(2em)` 来实现缩进（中间不要有空行）。例如：
 
-    ```
-    = 标题
+  ```
+  = 标题
 
-    #h(2em)
-    我原本没有缩进，但是由于上面这行函数，现在我有了缩进。
-    ```
+  #h(2em)
+  我原本没有缩进，但是由于上面这行函数，现在我有了缩进。
+  ```
