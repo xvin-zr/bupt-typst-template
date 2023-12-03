@@ -126,8 +126,7 @@
       [
         #align(center)[
           #text(font: FONTSET.at("English"), size: FONTSIZE.XiaoWu)[
-            // 这里默认了摘要只有 2 页
-            // TODO: 更改成自动获取摘要页数
+            // 这里默认了摘要只有 2 页，根据实际情况修改
             #romanNumMap(calc.abs(loc.page() - 2))
           ]
         ]
@@ -147,7 +146,7 @@
     let sectionCounter    = 1
     let subsectionCounter = 1
 
-    // 摘要和目录的总页数
+    // 摘要和目录的总页数，根据实际情况修改
     let abstractOutlinePages = 3
 
     let headingList = query(selector(heading).after(loc), loc)
