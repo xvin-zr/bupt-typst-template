@@ -94,10 +94,9 @@ $ S = pi r^2 $
 
 这是一段用示例代码。
 
-```cpp
-void setFib(void)
-{
-  fib(1 | 2 | 3 | 5 | 8 | 13 | 21 | 34 | 55 | 89, 10);
+```ts
+async function graduate(age: number) {
+  return age + 4;
 }
 ```
 
