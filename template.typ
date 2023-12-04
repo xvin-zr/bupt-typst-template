@@ -127,7 +127,7 @@
         #align(center)[
           #text(font: FONTSET.at("English"), size: FONTSIZE.XiaoWu)[
             // 这里默认了摘要只有 2 页，根据实际情况修改
-            #romanNumMap(calc.abs(loc.page() - 2))
+            #romanNumMap(counter(page).at(loc).at(0))
           ]
         ]
       ]
