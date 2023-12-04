@@ -113,9 +113,10 @@
 
   [\ \ ]
   text(weight: "semibold", size: FONTSIZE.XiaoSi, h(2em) + "KEY WORDS")
+  // 英文关键词之间间隔 2 个字符空格，这里使用 nbsp
   text(size: FONTSIZE.XiaoSi,
     for value in keywordsEN {
-      h(1em) + value
+      [\u{00A0}\u{00A0}] + value
     }
   )
   pagebreak()
