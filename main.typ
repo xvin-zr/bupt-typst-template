@@ -128,6 +128,8 @@ Typst 还支持书写行内的代码，就像 Markdown 一样，比如`const one
 
 但是 Typst 的中文与英文和数字之间的空格并没有像 LaTeX 那样自动空出，所以就需要自己手打了。
 
+附录中的图片和公式需要重新编排，现在尚未实现。
+
 
 
 #set page(footer: none)
