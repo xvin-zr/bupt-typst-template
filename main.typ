@@ -17,7 +17,9 @@
   abstractEN: [
     English Abstract.
     
-    The quick brown fox jumps over the lazy dog and runs away. The quick brown fox jumps over the lazy dog and runs away. The quick brown fox jumps over the lazy dog and runs away. 
+    The quick brown fox jumps over the lazy dog and runs away. 
+
+    Inter is one of the world's most used typefaces with applications ranging from computer interfaces, advertising & airports, to NASA instrumentation & medical equipment.
   ],
   keywordsEN: ("BUPT", "undergraduate", "thesis", "template", "example"),
 )

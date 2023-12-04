@@ -29,7 +29,6 @@
 
 #let FONTSET = (
   English: "Times New Roman",
-  // English: "STIX Two Text",
   Hei:     ("Inter", "Source Han Sans SC"),
   Song:    "Source Han Serif SC",
   Kai:     "STKaiti",
@@ -52,7 +51,7 @@
 ) = {
   // 页面配置
   set page(paper: "a4", margin: 2.5cm)
-  set text(font: (FONTSET.at("English"), FONTSET.at("Song")), weight: "regular", size: FONTSIZE.XiaoSi)
+  set text(font: (FONTSET.at("English"), FONTSET.at("Song")).flatten(), weight: "regular", size: FONTSIZE.XiaoSi)
 
   // 数学公式
   show math.equation: it => if it.block {
@@ -66,7 +65,7 @@
       align(center, it),
         align(horizon + right)[
         #text(
-          font: (FONTSET.at("English"), FONTSET.at("Song")),
+          font: (FONTSET.at("English"), FONTSET.at("Song")).flatten(),
           [式（#chapterLevel\-#equationCounter.display()）]
         )
       ]
@@ -301,7 +300,7 @@
     PrimaryHeading([= 参考文献])
     
     set text(
-      font: (FONTSET.at("English"), FONTSET.at("Song")), size: FONTSIZE.WuHao, 
+      font: (FONTSET.at("English"), FONTSET.at("Song")).flatten(), size: FONTSIZE.WuHao, 
       lang: "zh"
     )
     set par(first-line-indent: 0em)
@@ -331,7 +330,7 @@
     align(center)[
       #it.body
       #text(
-        font: (FONTSET.at("English"), FONTSET.at("Kai")),
+        font: (FONTSET.at("English"), FONTSET.at("Kai")).flatten(),
         size: FONTSIZE.WuHao,
         [图 #chapterLevel\-#figureCounter.display() #caption]
       )
@@ -352,7 +351,7 @@
 
     align(center)[
       #text(
-        font: (FONTSET.at("English"), FONTSET.at("Kai")),
+        font: (FONTSET.at("English"), FONTSET.at("Kai")).flatten(),
         size: FONTSIZE.WuHao,
         [表 #chapterLevel\-#tableCounter.display() #caption]
       )
