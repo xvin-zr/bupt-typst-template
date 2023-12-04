@@ -263,27 +263,6 @@
   body
 }
 
-// 附录部分
-// #let Appendix(
-//   body
-// ) = {
-//   show heading: it => locate(loc => {
-//     set par(first-line-indent: 0em)
-    
-//     let levels = counter(heading).at(loc)
-
-//     if it.level == 1 {
-//       align(center)[
-//         #text(font: FONTSET.at("Hei"), size: FONTSIZE.SanHao, it.body)
-//       ]
-//     } else if it.level == 2 {
-//       text(size: FONTSIZE.SiHao, it.body)
-//     }
-//   })
-
-//   body
-// }
-
 #let PrimaryHeading(
   title
 ) = {
@@ -294,6 +273,50 @@
     [], [#title], []
   )
 }
+
+// 附录部分
+#let Appendix(
+  bibliographyFile: none,
+  
+  body
+) = {
+  show heading: it => locate(loc => {
+    set par(first-line-indent: 0em)
+    
+    let levels = counter(heading).at(loc)
+
+    if it.level == 1 {
+      align(center)[
+        #text(font: FONTSET.at("Hei"), size: FONTSIZE.SanHao, it.body)
+      ]
+    } else if it.level == 2 {
+      text(size: FONTSIZE.SiHao, it.body)
+    }
+  })
+
+  // 参考文献
+  if bibliographyFile != none {
+    pagebreak()
+    PrimaryHeading([= 参考文献])
+    
+    set text(
+      font: (FONTSET.at("English"), FONTSET.at("Song")), size: FONTSIZE.WuHao, 
+      lang: "zh"
+    )
+    set par(first-line-indent: 0em)
+    bibliography(
+      bibliographyFile, 
+      title: none,
+      style: "gb-t-7714-2015-numeric.csl",
+    )
+    show bibliography: it => {
+
+    }
+  }
+
+  body
+}
+
 
 // 图
 #let Figure(

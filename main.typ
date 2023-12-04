@@ -1,5 +1,4 @@
 #import "template.typ": *
-#import "appendix.typ": *
 
 #show: BUPTBachelorThesis.with(
   titleZH: "这是一个本科毕业设计的中文标题",
@@ -100,7 +99,7 @@ async function graduate(age: number) {
 }
 ```
 
-Typst 还支持书写行内的代码，就像 Markdown 一样，比如 `return n * f(n - 1)` 。
+Typst 还支持书写行内的代码，就像 Markdown 一样，比如 ```ts one.age = await graduate(one.age)``` 。
 
 // 附页
 #show: Appendix.with(
