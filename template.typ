@@ -29,11 +29,11 @@
 
 #let FONTSET = (
   English: "Times New Roman",
+  // English: "STIX Two Text",
   Hei:     ("Inter", "Source Han Sans SC"),
   Song:    "Source Han Serif SC",
   Kai:     "STKaiti",
 )
-// #set text(font: "STIX Two Text")
 
 #let tableCounter    = counter("Table")
 #let figureCounter   = counter("Figure")
