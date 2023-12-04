@@ -99,7 +99,7 @@ async function graduate(age: number) {
 }
 ```
 
-Typst 还支持书写行内的代码，就像 Markdown 一样，比如 ```ts one.age = await graduate(one.age)``` 。
+Typst 还支持书写行内的代码，就像 Markdown 一样，比如`const one = { age: 18 }`；也支持语法高亮，比如```ts one.age = await graduate(one.age)``` 。
 
 // 附页
 #show: Appendix.with(
