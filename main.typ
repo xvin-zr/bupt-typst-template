@@ -87,7 +87,7 @@ $ S = pi r^2 $
 
 如果上面一段的引用显示有问题，你可以这样引用#cite(<nextjs13>, style: "ieee")。
 
-也可以这样引用多个文献@useFormStatus @useFormState。
+也可以这样#cite(<useFormStatus>)#cite(<useFormState>)引用多个文献。
 
 == 代码示例
 
