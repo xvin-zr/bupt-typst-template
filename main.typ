@@ -87,7 +87,7 @@ $ S = pi r^2 $
 #h(2em)
 这是一个参考文献的引用@source-han-sans 。但是具体的格式还不正确。
 
-如果上面一段的引用显示有问题，你可以这样引用#cite(<nextjs13>, style: "ieee")。
+如果上面一段的引用显示有问题，你可以这样引用。#cite(<nextjs13>)
 
 也可以这样#cite(<useFormStatus>)#cite(<useFormState>)引用多个文献。
 
@@ -123,6 +123,9 @@ Typst 还支持书写行内的代码，就像 Markdown 一样，比如`const one
 #PrimaryHeading([= 附#h(2em)录])
 
 #set heading(outlined: false)
+// TODO: 根据
+// #locate(loc => counter(heading).at(loc).at(1))
+// 生成附录图片和代码编号
 
 == 附录 1
 

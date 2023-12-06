@@ -234,7 +234,7 @@
 
   // 引用
   show cite: it => {
-    text(font: FONTSET.at("English"), super(it))
+    text(font: FONTSET.at("English"), it)
   }
 
   // 页眉页脚
