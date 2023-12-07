@@ -85,11 +85,11 @@ $ S = pi r^2 $
 == 引用示例
 
 #h(2em)
-这是一个参考文献的引用@source-han-sans 。但是具体的格式还不正确。
+这是一个参考文献的引用@唐绪军2015中国新媒体发展报告。但是具体的格式还不正确。
 
-如果上面一段的引用显示有问题，你可以这样引用。#cite(<nextjs13>)
+如果上面一段的引用显示有问题，你可以这样引用。#cite(<false_news_spread_2018>)
 
-也可以这样#cite(<useFormStatus>)#cite(<useFormState>)引用多个文献。
+也可以这样#cite(<Yang2012Automatic>)#cite(<张志祥1998-->)引用多个文献。
 
 == 代码示例
 
