@@ -107,7 +107,7 @@ Typst 还支持书写行内的代码，就像 Markdown 一样，比如`const one
 = 换页样例
 
 #h(2em)
-你需要手动换页来开启新的一章。
+你需要手动换页来开启新的一章。#cite(<internet_news_2016>)
 
 // 附页
 #show: Appendix.with(
